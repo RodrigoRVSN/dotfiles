@@ -1,2 +1,2 @@
-require("rodrigorvsn")
-
+require("setup.remap")
+require("setup.set")
