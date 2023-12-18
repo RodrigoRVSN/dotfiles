@@ -1,8 +1,3 @@
-```bash
-git config --global --edit
-```
-
-```bash
 [user]
 	email = rodrigovictor81@gmail.com
 	name = rodrigorvsn
@@ -19,4 +14,3 @@ git config --global --edit
   s = !git status -s -b 
   c = !git add --all && git commit -m
   l = !git log --pretty=format:'%C(blue)%h %C(red)%d%C(white)%s - %C(green)%cn, %cr'
-```
