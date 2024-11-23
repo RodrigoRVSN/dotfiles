@@ -1,5 +1,4 @@
 # 1) Oh My Zsh
-sudo dnf install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp .zshrc ~/.zshrc
 # Zsh auto suggestions
@@ -28,4 +27,5 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.28.6/docker-
 sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo chmod 666 /var/run/docker.sock
-sudo chmod +x /usr/local/bin/docker-compose
+sudo chmod +x /usrsudo dnf copr enable atim/lazygit -y
+sudo dnf install lazygit/local/bin/docker-compose
