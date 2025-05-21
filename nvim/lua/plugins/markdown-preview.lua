@@ -7,7 +7,7 @@ return {
     end,
     keys = {
       { "<leader>fmp", "<cmd>MarkdownPreview<cr>", desc = "Markdown Preview" },
-      { "<leader>fmp", "<cmd>MarkdownPreviewStop<cr>", desc = "Stop Markdown Preview" },
+      { "<leader>fms", "<cmd>MarkdownPreviewStop<cr>", desc = "Stop Markdown Preview" },
     },
   },
 }
