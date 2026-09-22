@@ -10,7 +10,7 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
-    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = { colorscheme = "catppuccin" } },
     -- { import = "lazyvim.plugins.extras.lang.rust" },
     -- import any extras modules here
     -- { import = "lazyvim.plugins.extras.lang.typescript" },
@@ -18,7 +18,6 @@ require("lazy").setup({
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
 
     { import = "lazyvim.plugins.extras.test.core" },
-    { "nvim-neotest/neotest-jest", dependencies = { "nvim-lua/plenary.nvim" } },
     { import = "plugins", change_detector = { notify = false } },
   },
   defaults = {
@@ -30,7 +29,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  checker = { enabled = false }, -- automatically check for plugin updates
+  checker = { enabled = true, notify = false }, -- automatically check for plugin updates
   performance = {
     rtp = {
       disabled_plugins = {
